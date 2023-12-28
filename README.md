@@ -40,7 +40,7 @@ From your command line, first clone My-Portfolio:
 
 ```bash
 # Clone the repository
-$ git clone https://github.com/cobidev/simplefolio
+$ git clone https://github.com/trushashah14/My-Portfolio.git
 
 # Move into the repository
 $ cd My-Portfolio
