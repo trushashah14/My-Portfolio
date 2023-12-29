@@ -12551,55 +12551,51 @@ section {
   }
 }
 
-.card {
+div.scroll-container {
+  width: 825px;
   height: 400px;
-  color: #fff;
-  background-color: #0006;
-  flex: 0 0 400px;
-  margin: 5px;
-  font-size: 30px;
-  transition: all .2s ease-out;
+  white-space: nowrap;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 5px;
+  overflow: auto;
 }
 
-.cards img {
-  height: 400px;
+div.scroll-container img {
+  height: 370px;
+  object-fit: fill;
+  padding: 5px;
+  overflow: scroll;
+}
+
+div.display-area {
+  width: 825px;
+  height: 390px;
+  white-space: nowrap;
+  background-color: #fff;
+  border: 1px solid #000;
+  margin: auto;
+  padding: 5px;
+  overflow: auto;
+}
+
+div.display-area img {
   width: 100%;
   object-fit: contain;
-}
-
-.cards-wrapper, .cards-wrapper1 {
-  transition: all .5s;
-  display: flex;
-}
-
-.display-area {
-  width: 825px;
   margin: auto;
-  overflow-x: hidden;
+  overflow: auto;
 }
 
-.dots-wrapper, .dots-wrapper1 {
-  justify-content: center;
-  margin: auto;
-  display: flex;
-}
+@media screen and (max-width: 600px) {
+  div.scroll-container {
+    width: 395px;
+    height: 400px;
+  }
 
-.dot, .dot1 {
-  width: 20px;
-  height: 20px;
-  background: #0003;
-  border: none;
-  border-radius: 50%;
-  outline: none;
-  margin: 5px;
-}
-
-.dot:hover, .dot1:hover {
-  background: #0000004d;
-}
-
-.dot.active, .dot1.active {
-  background: #00000080;
+  div.display-area {
+    width: 100%;
+    height: 200px;
+  }
 }
 
 /*# sourceMappingURL=index.4a508c1d.css.map */
