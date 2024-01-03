@@ -1,3 +1,23 @@
+:root {
+  --primary-color:#{ $primary-color};
+  --secondary-color:#{$secondary-color};
+  --white-color:#{$white-color};
+  --button-color:#{$black-color};
+  --dark-grey: #{$dark-grey};
+  --light-grey:#{$light-grey};
+  --dark-blue-text: #{$dark-blue-text}; // For Headings
+}
+
+[data-theme="dark"] {
+  --primary-color: #{$black-color};
+  --secondary-color:#{$secondary-color};
+  --white-color:#{$black-color};
+  --button-color:#{$white-color};
+  --dark-grey:#{$black-color};
+  --light-grey: #{$light-grey};
+  --dark-blue-text: #{$purple-color};
+}
+
 html {
   font-size: 62.5%;
 
@@ -9,4 +29,6 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  background-color: var(--white-color);
+  scroll-behavior: smooth;
 }

@@ -8,6 +8,8 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+
 
 
 
@@ -30,12 +32,24 @@
 
 <body>
   <div id="top"></div>
+  <!-- Dark Mode Switch -->
+  <div class="theme-switch-wrapper">
+    <span id="toggle-icon">
+      <span class="toggle-text">Light Mode</span>
+      <i class="fas fa-sun"></i>
+    </span>
+    <label class="theme-switch">
+      <input type="checkbox">
+      <div class="slider round"></div>
+    </label>
+  </div>
 
+<nav id="nav"></nav>
   <!-- **** Hero Section **** -->
   <section id="hero" class="jumbotron">
     <div class="container">
       <h1 class="hero-title load-hidden">
-        Hi, my name is <span class="text-color-main">Trusha Shah</span>
+        Hi, my name is <span style="color: #00cdac">Trusha Shah</span>
         <br />
         I'm the Developer you need.
       </h1>
@@ -110,7 +124,7 @@
             </div>
           </div>
           <div class="project-wrapper__image load-hidden thumbnail rounded js-tilt">
-            <div class="scroll-container">
+            <div class="scroll-container" id="scroll-container">
 
 
               <img src="./assets/Images/Project 1/P1a.png" alt="">
@@ -147,7 +161,7 @@
             </div>
           </div>
           <div class=" project-wrapper__image load-hidden thumbnail rounded js-tilt">
-            <div class="scroll-container">
+            <div class="scroll-container" id="scroll-container">
 
               <img src="./assets/Images/Project 2/P2a.png" alt="">
               <img src="./assets/Images/Project 2/P2b.png" alt="">
@@ -195,7 +209,8 @@
             </div>
           </div>
           <div class="project-wrapper__image load-hidden thumbnail rounded js-tilt">
-            <div class="display-area"> <img src="./assets/Images/Project 3/P3.png" alt="">
+            <div class="display-area" id="scroll-container"> 
+              <img src="./assets/Images/Project 3/P3.png" alt="">
             </div>
           </div>
         </div>
@@ -224,7 +239,8 @@
             </div>
           </div>
           <div class="project-wrapper__image load-hidden thumbnail rounded js-tilt">
-            <div class="display-area"> <img src="./assets/Images/Project 4/P4.png" alt=""></div>
+            <div class="display-area" id="scroll-container"> 
+              <img src="./assets/Images/Project 4/P4.png" alt=""></div>
           </div>
         </div>
         <!-- /END Project -->
@@ -250,10 +266,45 @@
             </div>
           </div>
           <div class=" project-wrapper__image load-hidden thumbnail rounded js-tilt">
-            <div class="display-area"> <img src="./assets/Images/Project 5/P5.jpeg" alt=""></div>
+            <div class="display-area" id="scroll-container"> 
+              <img src="./assets/Images/Project 5/P5.jpeg" alt=""></div>
           </div>
         </div>
         <!-- /END Project -->
+        <!-- Notice: each .row is a project -->
+
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">Picture In Picture</h3>
+              <div>
+                <p class="mb-4">
+                  HTML,CSS and Javascript based website that allows you to watch a video stream in a small window on top
+                  of another screen.You can also adjust the size and position of the PiP window to your reference.
+                </p>
+              </div>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
+                href="https://trushashah14.github.io/Picture-In-Picture/">
+                See Live
+              </a>
+              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+                href=" https://github.com/trushashah14/Picture-In-Picture">
+                Source code
+              </a>
+            </div>
+          </div>
+          <div class=" project-wrapper__image load-hidden thumbnail rounded js-tilt">
+            <div class="scroll-container" id="scroll-container">
+
+              <img src="./assets/Images/Project 6/P6a.png" alt="">
+              <img src="./assets/Images/Project 6/P6b.png" alt="">
+              <img src="./assets/Images/Project 6/P6c.png" alt="">
+
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
       </div>
     </div>
   </section>
@@ -265,7 +316,8 @@
       <h2 class="section-title">Contact</h2>
       <div class="contact-wrapper load-hidden">
         <p class="contact-wrapper__text">trushashah1402@gmail.com</p>
-        <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="mailto:trushashah1402@gmail.com">Call to
+        <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="mailto:trushashah1402@gmail.com">Call
+          to
           Action</a>
       </div>
     </div>
