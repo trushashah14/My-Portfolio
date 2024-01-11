@@ -12,24 +12,6 @@ function toggleDarkLightMode(isDark){
     textBox.style.backgroundColor =isDark ? 'rgb(255 255 255 / 50%)' : 'rgb(0 0 0 / 50%)' ;
 }
 
-// // Dark Mode Styles
-// function darkMode() {
-//     toggleIcon.children[0].textContent = 'Dark Mode';
-//     toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon');
-
-//     nav.style.backgroundColor = 'rgb(0 0 0 / 40%)';
-//     textBox.style.backgroundColor = 'rgb(255 255 255 / 50%)';
-
-// }
-
-// // Light Mode Styles
-// function lightMode() {
-//     toggleIcon.children[0].textContent = 'Light Mode';
-//     toggleIcon.children[1].classList.replace('fa-moon', 'fa-sun');
-//     nav.style.backgroundColor = 'rgb(255 255 255 / 90%)';
-//     textBox.style.backgroundColor = 'rgb(0 0 0 / 50%)';
-
-// }
 
 // Switch Theme Dynamically
 function switchTheme(event) {
