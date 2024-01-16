@@ -121,7 +121,7 @@ div.scroll-container {
   overflow: auto;
   white-space: nowrap;
   padding: 5px;
-  border: 1px solid black;
+  border: 1px solid var(--button-color);
 }
 
 div.scroll-container img {
@@ -140,7 +140,7 @@ div.display-area {
   overflow: auto;
   white-space: nowrap;
   padding: 5px;
-  border: 1px solid black;
+  border: 1px solid var(--button-color);
 }
 
 div.display-area img {
