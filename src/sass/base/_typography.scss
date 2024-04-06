@@ -116,17 +116,17 @@ input:checked+.slider::before {
 
 div.scroll-container {
   width: 825px;
-  height: 400px;
+  height: 430px;
   background-color: var(--white-color);
   overflow: auto;
   white-space: nowrap;
   padding: 5px;
-  border: 1px solid var(--button-color);
+  margin-bottom: 30px;
 }
 
 div.scroll-container img {
   padding: 5px;
-  height: 370px;
+  height: 400px;
   // width: 50%;
   object-fit: fill;
   overflow: scroll;
@@ -135,12 +135,13 @@ div.scroll-container img {
 div.display-area {
   width: 825px;
   margin: auto;
-  height: 390px;
+ 
+  height: 485px;
   background-color: var(--white-color);
   overflow: auto;
   white-space: nowrap;
-  padding: 5px;
-  border: 1px solid var(--button-color);
+  padding: 2px;
+ 
 }
 
 div.display-area img {
@@ -149,6 +150,7 @@ div.display-area img {
   object-fit: contain;
   margin: auto;
 }
+
 
 
 
@@ -202,14 +204,41 @@ div.display-area img {
 @media screen and (max-width: 600px) {
 
   div.scroll-container {
-    width: 395px;
+    width: 100%;
     height: 400px;
+  }
+  
+  div.scroll-container img {
+    height: 350px;
   }
 
   div.display-area {
     width: 100%;
-    height: 200px;
+    height: 290px;
   }
 
+  .theme-switch {
+  
+    height: 24px;
+    
+    width: 40px;
+  }
 
+  input:checked+.slider::before {
+    transform: translateX(19px);
+  }
+
+  .slider::before {
+   
+    left: 0px;
+    bottom: 3px;
+    height: 18px;
+    width: 18px;
+  }
+
+  .fas {
+    font-size: 26px;
+    
+  
+  }
 }

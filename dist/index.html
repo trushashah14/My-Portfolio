@@ -8,8 +8,10 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.be471df2.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.a2ea98cd.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.d3bcaab0.png">
-
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/index.4a508c1d.css">
+  <script defer="" src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
   <!-- Todo: put here your site title -->
   <title>Trusha Shah | Developer</title>
@@ -18,24 +20,30 @@
   <!-- Todo: improve your SEO by adding a small description of you -->
   <meta name="description" content="[Your name here] | Developer">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/index.4a508c1d.css">
-  <script defer="" src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-
   <!-- Todo: remove the below script once you finish your portfolio -->
-  <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
+  <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
 </head>
-
-<!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
 
 <body>
   <div id="top"></div>
+  <!-- Dark Mode Switch -->
+  <div class="theme-switch-wrapper">
+    <span id="toggle-icon">
+      <span class="toggle-text">Light Mode</span>
+      <i class="fas fa-sun"></i>
+    </span>
+    <label class="theme-switch">
+      <input type="checkbox">
+      <div class="slider round"></div>
+    </label>
+  </div>
 
+  <nav id="nav"></nav>
   <!-- **** Hero Section **** -->
   <section id="hero" class="jumbotron">
     <div class="container">
       <h1 class="hero-title load-hidden">
-        Hi, my name is <span class="text-color-main">Trusha Shah</span>
+        Hi, my name is <span style="color: #00cdac">Trusha Shah</span>
         <br>
         I'm the Developer you need.
       </h1>
@@ -60,9 +68,9 @@
           <div class="about-wrapper__info load-hidden">
             <p class="about-wrapper__info-text">
               Software engineer with ability to learn and collaborate in rapidly changing environments and compositions.
-              Eager to tackle web development/design challenges to achieve lasting impacts on user experience.Strong
-              organizational skills to juggle multiple tasks within the constraints of timelines.Ability to work and
-              master diverse web technologies and techniques.
+              Eager to tackle web development/design challenges to achieve lasting impacts on user
+              experience.Strong organizational skills to juggle multiple tasks within the constraints of
+              timelines.Ability to work and master diverse web technologies and techniques.
             </p>
             <p class="about-wrapper__info-text">
               Always on the path to be a better version of myself.
@@ -85,6 +93,37 @@
       <div class="project-wrapper">
         <h2 class="section-title dark-blue-text">Projects</h2>
 
+
+        <!-- Notice: each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">Realtor: Real-estate website</h3>
+              <div>
+                <p class="mb-4">
+                  A React-based platform styled with Tailwind CSS and powered by Google Firebase. Featuring Leaflet for
+                  maps, Swiper for sliders, React Router for navigation, and React Toastify for notifications.
+                  With robust authentication, users can sign in via email/password or Google authentication. Easily add,
+                  edit, and manage property listings for sale or rent. Explore curated listings and engage with a
+                  user-friendly interface.
+                </p>
+              </div>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://realtor-project-app.vercel.app/">
+                See Live
+              </a>
+              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/trushashah14/Realtor-Project">
+                Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper__image load-hidden rounded ">
+            <div class="display-area">
+              <img src="/P11.969b6636.png" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
         <!-- Notice: each .row is a project -->
         <div class="row">
           <div class="col-lg-4 col-sm-12">
@@ -92,10 +131,9 @@
               <h3 class="project-wrapper__text-title">SmartBrain</h3>
               <div>
                 <p class="mb-4">
-                  Image Face Detection and Caption Generation app that has a
-                  Frontend using React.It uses image recognition and image caption
-                  generation API.It has its own server using Node.js and Express and
-                  has a Database as well (Postgress SQL).
+                  Image Face Detection and Caption Generation app that has a Frontend using React.It uses image
+                  recognition and image caption generation API.It has its own server using Node.js and Express and has a
+                  Database as well (Postgress SQL).
                 </p>
               </div>
               <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://smart-brain-recognition.onrender.com/">
@@ -106,10 +144,8 @@
               </a>
             </div>
           </div>
-          <div class="project-wrapper__image load-hidden thumbnail rounded js-tilt">
+          <div class="project-wrapper__image load-hidden rounded">
             <div class="scroll-container">
-
-
               <img src="/P1a.df35812e.png" alt="">
               <img src="/P1b.e9fee148.png" alt="">
 
@@ -118,7 +154,6 @@
 
               <img src="/P1e.53d7fb0b.png" alt="">
               <img src="/P1f.d35344dd.png" alt="">
-
             </div>
           </div>
         </div>
@@ -131,10 +166,10 @@
               <h3 class="project-wrapper__text-title">AllinLAN</h3>
               <div>
                 <p class="mb-4">
-                  “AllinLAN” is a java based desktop application where Private Chat, GroupChat,
-                  FileSharing, Screen Sharing functionalities can be formed through LAN i.e Local Area
-                  Network.The working is divided between two Users, Secondary User which runs as a
-                  client and Primary User, which runs as the server in the network
+                  “AllinLAN” is a java based desktop application where Private Chat, GroupChat, FileSharing, Screen
+                  Sharing functionalities can be formed through LAN i.e Local Area Network.The working is divided
+                  between two Users, Secondary User which runs as a client and Primary User, which runs as the server in
+                  the network
                 </p>
               </div>
               <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://github.com/trushashah14/ALLinLan">
@@ -142,9 +177,8 @@
               </a>
             </div>
           </div>
-          <div class=" project-wrapper__image load-hidden thumbnail rounded js-tilt">
+          <div class="project-wrapper__image load-hidden rounded">
             <div class="scroll-container">
-
               <img src="/P2a.30f4af3e.png" alt="">
               <img src="/P2b.076c71f6.png" alt="">
 
@@ -169,27 +203,32 @@
           </div>
         </div>
         <!-- /END Project -->
-        <br>
+
         <!-- Notice: each .row is a project -->
+
         <div class="row">
           <div class="col-lg-4 col-sm-12">
             <div class="project-wrapper__text load-hidden">
-              <h3 class="project-wrapper__text-title">RoboFriends</h3>
+              <h3 class="project-wrapper__text-title">Picture In Picture</h3>
               <div>
                 <p class="mb-4">
-                  Small react based interactive website using javascript,CSS and HTML
+                  HTML,CSS and Javascript based website that allows you to watch a video stream in a small window on top
+                  of another screen.You can also adjust the size and position of the PiP window to your reference.
                 </p>
               </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://trushashah14.github.io/RoboFriends/">
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://trushashah14.github.io/Picture-In-Picture/">
                 See Live
               </a>
-              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/trushashah14/RoboFriends">
-                Source Code
+              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href=" https://github.com/trushashah14/Picture-In-Picture">
+                Source code
               </a>
             </div>
           </div>
-          <div class="project-wrapper__image load-hidden thumbnail rounded js-tilt">
-            <div class="display-area"> <img src="/P3.6992ab77.png" alt="">
+          <div class="project-wrapper__image load-hidden rounded ">
+            <div class="scroll-container">
+              <img src="/P6a.b6f8b66c.png" alt="">
+              <img src="/P6b.cb2be516.png" alt="">
+              <img src="/P6c.61309ae5.png" alt="">
             </div>
           </div>
         </div>
@@ -199,24 +238,29 @@
         <div class="row">
           <div class="col-lg-4 col-sm-12">
             <div class="project-wrapper__text load-hidden">
-              <h3 class="project-wrapper__text-title">Quotes-Generator</h3>
+              <h3 class="project-wrapper__text-title">Custom Countdown</h3>
               <div>
                 <p class="mb-4">
-                  HTML,CSS and Javascript based website that generates unique quotes on a click of a button and allows
-                  you
-                  to share it on Twitter.
-                </p>
+                  A custom Countdown with a video background where you can create a countdown that even gets stored
+                  locally to avoid resetting on refresh.
+                </p><p> <i>(Date/Time format : UTC)</i> </p>
+                <p></p>
               </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://trushashah14.github.io/Quotes-Generator/">
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://trushashah14.github.io/Custom-Countdown/">
                 See Live
               </a>
-              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/trushashah14/Quotes-Generator">
-                Source Code
+              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href=" https://github.com/trushashah14/Custom-Countdown/">
+                Source code
               </a>
             </div>
           </div>
-          <div class="project-wrapper__image load-hidden thumbnail rounded js-tilt">
-            <div class="display-area"> <img src="/P4.3fe109a0.png" alt=""></div>
+          <div class="project-wrapper__image load-hidden  rounded ">
+            <div class="scroll-container">
+              <img src="/P9a.47111730.jpeg" alt="">
+              <img src="/P9b.e0adb4cf.jpeg" alt="">
+              <img src="/P9c.57c9d3a3.jpeg" alt="">
+              <img src="/P9d.be666875.jpeg" alt="">
+            </div>
           </div>
         </div>
         <!-- /END Project -->
@@ -239,8 +283,151 @@
               </a>
             </div>
           </div>
-          <div class=" project-wrapper__image load-hidden thumbnail rounded js-tilt">
-            <div class="display-area"> <img src="/P5.6ae5d601.jpeg" alt=""></div>
+          <div class="project-wrapper__image load-hidden rounded ">
+            <div class="display-area">
+              <img src="/P5.6ae5d601.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+        <br>
+        <br>
+        <!-- Notice: each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">Animated Navigation</h3>
+              <div>
+                <p class="mb-4">
+                  All about using nav and making an animated navigation for websites.
+                </p>
+              </div>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://trushashah14.github.io/Animated-Navigation/">
+                See Live
+              </a>
+              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href=" https://github.com/trushashah14/Animated-Navigation">
+                Source code
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper__image load-hidden rounded">
+            <div class=" display-area">
+              <img src="/P7a.0b012697.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+        <br>
+        <br>
+        <!-- Notice: each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">RoboFriends</h3>
+              <div>
+                <p class="mb-4">
+                  Small react based interactive website using javascript,CSS and HTML
+                </p>
+              </div>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://trushashah14.github.io/RoboFriends/">
+                See Live
+              </a>
+              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/trushashah14/RoboFriends">
+                Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper__image load-hidden rounded ">
+            <div class="display-area">
+              <img src="/P3.6992ab77.png" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+        <!-- Notice: each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">Quotes-Generator</h3>
+              <div>
+                <p class="mb-4">
+                  HTML,CSS and Javascript based website that generates unique quotes on a click of a button and allows
+                  you to share it on Twitter.
+                </p>
+              </div>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://trushashah14.github.io/Quotes-Generator/">
+                See Live
+              </a>
+              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/trushashah14/Quotes-Generator">
+                Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper__image load-hidden rounded ">
+            <div class="display-area">
+              <img src="/P4.3fe109a0.png" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+
+
+
+        <!-- Notice: each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">Music Player</h3>
+              <div>
+                <p class="mb-4">
+                  A music player where you can control the music as per your need. Also one can change the background
+                  gradient dynamically.
+                </p>
+              </div>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://trushashah14.github.io/Music-Player/">
+                See Live
+              </a>
+              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href=" https://github.com/trushashah14/Music-Player">
+                Source code
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper__image load-hidden rounded">
+            <div class=" display-area">
+              <img src="/P8a.e9fc1996.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+
+
+        <!-- Notice: each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">Video Player</h3>
+              <div>
+                <p class="mb-4">
+                  A Custom video player where one can adjust the speed , volume and position of the video.You can also
+                  pause/play by clicking anywhere on the video.
+                </p>
+              </div>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://trushashah14.github.io/Video-Player/">
+                See Live
+              </a>
+              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href=" https://github.com/trushashah14/Video-Player">
+                Source code
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper__image load-hidden  rounded">
+            <div class=" display-area">
+              <img src="/P10a.0075160f.jpeg" alt="">
+            </div>
           </div>
         </div>
         <!-- /END Project -->
@@ -254,9 +441,9 @@
     <div class="container">
       <h2 class="section-title">Contact</h2>
       <div class="contact-wrapper load-hidden">
-        <p class="contact-wrapper__text">[Put your call to action here]</p>
-        <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="mailto:example@email.com">Call to
-          Action</a>
+        <p class="contact-wrapper__text">trushashah1402@gmail.com</p>
+        <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="mailto:trushashah1402@gmail.com">Call
+          to Action</a>
       </div>
     </div>
   </section>
@@ -269,27 +456,22 @@
         <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
       </a>
       <div class="social-links">
-        <a rel="noreferrer" href="#!" target="_blank">
+        <a rel="noreferrer" href="https://twitter.com/hrtbeat142" target="_blank">
           <i class="fa fa-twitter fa-inverse"></i>
         </a>
-        <a rel="noreferrer" href="#!" target="_blank">
+        <a rel="noreferrer" href="https://www.linkedin.com/in/trushashah142/" target="_blank">
           <i class="fa fa-linkedin fa-inverse"></i>
         </a>
-        <a rel="noreferrer" href="#!" target="_blank">
+        <a rel="noreferrer" href="https://github.com/trushashah14/" target="_blank">
           <i class="fa fa-github fa-inverse"></i>
         </a>
       </div>
-
       <hr>
-
       <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
       <p class="footer__text">
         © 2023 - Developed by
-        <a rel="noreferrer" href="https://github.com/cobidev" target="_blank">Trusha Shah</a>
+        <a rel="noreferrer" href="https://github.com/trushashah14/" target="_blank">Trusha Shah</a>
       </p>
-
-
-
     </div>
   </footer>
   <!-- /END Footer Section -->
