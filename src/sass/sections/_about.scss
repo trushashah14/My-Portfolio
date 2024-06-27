@@ -3,9 +3,9 @@
   background-image: linear-gradient(
     135deg,
     #02aab0 0%,
-    var(--secondary-color) 100%
+    var(--major-fill) 100%
   );
-  color: var(--white-color);
+  color: #fefefe;
   height: 100%;
   border-top: 0px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);

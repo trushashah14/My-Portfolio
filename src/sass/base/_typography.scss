@@ -4,6 +4,10 @@ h1 {
   font-weight: 700;
 }
 
+hr{
+  color:#fefefe;
+}
+
 p,
 a {
   font-family: "Montserrat", sans-serif;
@@ -53,7 +57,7 @@ nav {
   position: relative;
   top: -4px;
   right: 5px;
-  color: var(--dark-blue-text);
+  color: var(--secondary-color);
 }
 
 .theme-switch {
@@ -114,6 +118,11 @@ input:checked+.slider::before {
 }
 
 
+.fa:hover {
+  color: var(--arrow-text);
+}
+
+
 div.scroll-container {
   width: 825px;
   height: 430px;
@@ -152,7 +161,81 @@ div.display-area img {
 }
 
 
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color:var(--fallback-color); /* Black w/ opacity */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
 
+/* Modal Content/Box */
+.modal-content {
+  background-color:#fefefe;
+  color: #0b0b0be7;;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 900px; /* Set a max-width for better responsiveness */
+  max-height: 900px; /* Set a max-height for better responsiveness */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add a shadow for better visibility */
+  position: relative;
+  border-radius: 10px; /* Optional: rounded corners */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
+}
+
+.modal-description {
+  font-size: 16px;
+  line-height: 1.5; /* Adjust line-height for better spacing */
+}
+.modal-title {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif; /* Replace with your preferred font */
+}
+/* The Close Button */
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.cta-btn {
+  margin: 5px 0;
+  padding: 5px 10px;
+}
+
+@media (min-width: 770px) and (max-width: 1400px) {
+  .project-card .cta-btn {
+    flex: 1;
+    text-align: center;
+    font-size: 12px;
+  }
+  .project-card .d-flex.flex-wrap {
+    justify-content: space-between;
+  }
+}
 
 
 .section-title {
@@ -172,16 +255,18 @@ div.display-area img {
 }
 
 .text-color-main {
-  @include supportColorForIE11();
+  color:#fefefe;
 
   // Responsive text purple style
   @include respond(phone) {
     background-image: none;
-    -webkit-text-fill-color: var(--secondary-color);
+    -webkit-text-fill-color: #fefefe;
   }
 
   &:hover {
     transform: translateX(2px);
+  color:#fefefe;
+
   }
 }
 

@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: var(--white-color);
+    // color: var(--white-color);
     font-size: 3rem;
     width: 5rem;
     height: 5rem;
@@ -53,12 +53,14 @@
 
     &:hover {
       transform: translateY(-2px);
+    color: var(--arrow-text);
+
     }
   }
 }
 
 .back-to-top i {
-  color: var(--secondary-color);
+  color: var(--arrow-text);
   margin: 1rem 0 $default-font-size;
   transition: all 0.2s ease-in;
 

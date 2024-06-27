@@ -42,11 +42,16 @@
   <!-- **** Hero Section **** -->
   <section id="hero" class="jumbotron">
     <div class="container">
-      <h1 class="hero-title load-hidden">
-        Hi, my name is <span style="color: #00cdac">Trusha Shah</span>
-        <br />
-        I'm the Developer you need.
-      </h1>
+      <h1 class="hero-title load-hidden"
+        style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        Hi, my name is <span style="color: var(--name-text)">Trusha Shah</span></h1>
+      <br />
+      <h3 class="hero-title load-hidden"><span
+          style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 3rem;">
+          Enthusiastic entry-level full-stack developer with a strong grasp of web technologies, seeking an opportunity
+          to apply and expand coding skills in a dynamic team environment.
+        </span>
+      </h3>
       <p class="hero-cta load-hidden">
         <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">Know more</a>
       </p>
@@ -68,7 +73,8 @@
         <div class="col-md-6 col-sm-12">
           <div class="about-wrapper__info load-hidden">
             <p class="about-wrapper__info-text">
-              Software engineer with ability to learn and collaborate in rapidly changing environments and compositions.
+              Aspiring Full Stack Developer with ability to learn and collaborate in rapidly changing environments and
+              compositions.
               Eager to tackle web development/design challenges to achieve lasting impacts on user
               experience.Strong organizational skills to juggle multiple tasks within the constraints of
               timelines.Ability to work and master diverse web technologies and techniques.
@@ -77,7 +83,7 @@
               Always on the path to be a better version of myself.
             </p>
             <span class="d-flex mt-3">
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="./assets/Trusha-Resume.pdf">
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="./assets/Trusha_Resume.pdf">
                 View Resume
               </a>
             </span>
@@ -89,374 +95,418 @@
   <!-- /END About Section -->
 
   <!-- **** Projects Section **** -->
+  <!-- <div class="filter-wrapper">
+    <label for="project-filter">Filter by Technology:</label>
+    <select id="project-filter">
+      <option value="all">All Technologies</option>
+      <option value="react">React</option>
+      <option value="tailwindcss">Tailwind CSS</option>
+    </select>
+  </div> -->
+
   <section id="projects">
     <div class="container">
       <div class="project-wrapper">
-        <h2 class="section-title dark-blue-text">Projects</h2>
-
-
-        <!-- Notice: each .row is a project -->
+        <h2 class="section-title dark-blue-text">Major Projects</h2>
         <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="project-wrapper__text load-hidden">
-              <h3 class="project-wrapper__text-title">Realtor: Real-estate website</h3>
-              <div>
-                <p class="mb-4">
-                  A React-based platform styled with Tailwind CSS and powered by Google Firebase. Featuring Leaflet for
-                  maps, Swiper for sliders, React Router for navigation, and React Toastify for notifications.
-                  With robust authentication, users can sign in via email/password or Google authentication. Easily add,
-                  edit, and manage property listings for sale or rent. Explore curated listings and engage with a
-                  user-friendly interface.
-                </p>
+          <!-- Project-1 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="card card-component shadow-md rounded-100 overflow-hidden mx-auto h-100 project-card p-3"
+              data-description="Image Face Detection and Caption Generation app that has a Frontend using React.It uses image recognition and image caption generation API.It has its own server using Node.js and Express and has a Database as well (Postgress SQL).</p><p><strong>Frameworks/libraries/Packages :</strong> React js, Postgres SQL ,particles-bg, tachyons, clarifai , express , bcrypt-nodejs ,cors 
+                </p><p><strong>Deployment:</strong> render</p>">
+              <img class="card-img-top" style="height: 280px;" src=".\assets\Images\Project 1\P1d.png" alt="" />
+              <div class="card-body mt-2">
+                <h3 class="card-title font-weight-bold "><strong>SmartBrain</strong></h3>
+                <hr>
+                <div class="d-flex flex-wrap justify-content-between">
+                  <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume"
+                    href="https://smart-brain-recognition.onrender.com/">
+                    See Live
+                  </a>
+                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+                    href="https://github.com/trushashah14/SmartBrain">
+                    Source Code
+                  </a>
+                  <a rel="noreferrer" class="cta-btn cta-btn--resume know-more-btn">
+                    Know more
+                  </a>
+                </div>
               </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
-                href="https://realtor-project-app.vercel.app/">
-                See Live
-              </a>
-              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                href="https://github.com/trushashah14/Realtor-Project">
-                Source Code
-              </a>
             </div>
           </div>
-          <div class="project-wrapper__image load-hidden rounded ">
-            <div class="display-area">
-              <img src="./assets/Images/Project 11/P11.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <!-- /END Project -->
-
-        <!-- Notice: each .row is a project -->
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="project-wrapper__text load-hidden">
-              <h3 class="project-wrapper__text-title">SmartBrain</h3>
-              <div>
-                <p class="mb-4">
-                  Image Face Detection and Caption Generation app that has a Frontend using React.It uses image
-                  recognition and image caption generation API.It has its own server using Node.js and Express and has a
-                  Database as well (Postgress SQL).
-                </p>
+          <!-- Project-1 ended-->
+          <!-- Project-2 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="card card-component shadow-md rounded-100 overflow-hidden mx-auto h-100 project-card p-3"
+              data-description="<p>A React-based platform styled with Tailwind CSS and powered by Google Firebase. Featuring Leaflet for maps, Swiper for sliders, React Router for navigation, and React Toastify for notifications.With robust authentication, users can sign in via email/password or Google authentication. Easily add,edit, and manage property listings for sale or rent. Explore curated listings and engage with a user-friendly interface.</p><p><strong>Frameworks/libraries/Packages :</strong> React js 18, Firebase 9 , Tailwind CSS 3 , react router version 6 , react toastify , leaflet/react leaflet and  Swiperjs</p><p><strong>Deployment:</strong> vercel</p>">
+              <img class="card-img-top" style="height: 280px;" src="./assets/Images/Project 11/P11.png"
+                alt="Image of a property">
+              <div class="card-body mt-2">
+                <h3 class="card-title font-weight-bold "><strong>Realtor: Real-estate website</strong></h3>
+                <hr>
+                <div class="d-flex flex-wrap justify-content-between">
+                  <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume"
+                    href="https://realtor-project-app.vercel.app/">
+                    See Live
+                  </a>
+                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+                    href="https://github.com/trushashah14/Realtor-Project">
+                    Source Code
+                  </a>
+                  <a rel="noreferrer" class="cta-btn cta-btn--resume know-more-btn">
+                    Know more
+                  </a>
+                </div>
               </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
-                href="https://smart-brain-recognition.onrender.com/">
-                See Live
-              </a>
-              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                href="https://github.com/trushashah14/SmartBrain">
-                Source Code
-              </a>
             </div>
           </div>
-          <div class="project-wrapper__image load-hidden rounded">
-            <div class="scroll-container">
-              <img src="./assets/Images/Project 1/P1a.png" alt="" />
-              <img src="./assets/Images/Project 1/P1b.png" alt="" />
+          <!-- Project-2 ended -->
 
-              <img src="./assets/Images/Project 1/P1c.png" alt="" />
-              <img src="./assets/Images/Project 1/P1d.png" alt="" />
+          <!-- Project-3 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="card card-component shadow-md rounded-100 overflow-hidden mx-auto h-100 project-card p-3"
+              data-description="<p>“AllinLAN” is a java based desktop application where Private Chat, GroupChat, FileSharing, Screen Sharing functionalities can be formed through LAN i.e Local Area Network.The working is divided between two Users, Secondary User which runs as a client and Primary User, which runs as the server in the network.</p><p><strong>Frameworks/libraries/Packages :</strong>Java, Netbeans IDE, SQLite</p><p><strong>Works in Local Area Network(LAN)</strong></p>">
+              <img class="card-img-top" style="height: 280px;" src="./assets/Images/Project 2/P2a.png"
+                alt="Image of Working project">
+              <div class="card-body mt-2">
+                <h3 class="card-title font-weight-bold "><strong>AllinLAN: A Desktop Application</strong></h3>
+                <hr>
+                <div class="d-flex flex-wrap justify-content-between">
 
-              <img src="./assets/Images/Project 1/P1e.png" alt="" />
-              <img src="./assets/Images/Project 1/P1f.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <!-- /END Project -->
-
-        <!-- Notice: each .row is a project -->
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="project-wrapper__text load-hidden">
-              <h3 class="project-wrapper__text-title">AllinLAN</h3>
-              <div>
-                <p class="mb-4">
-                  “AllinLAN” is a java based desktop application where Private Chat, GroupChat, FileSharing, Screen
-                  Sharing functionalities can be formed through LAN i.e Local Area Network.The working is divided
-                  between two Users, Secondary User which runs as a client and Primary User, which runs as the server in
-                  the network
-                </p>
+                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+                    href="https://github.com/trushashah14/ALLinLan">
+                    Source Code
+                  </a>
+                  <a rel="noreferrer" class="cta-btn cta-btn--resume know-more-btn">
+                    Know more
+                  </a>
+                </div>
               </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
-                href="https://github.com/trushashah14/ALLinLan">
-                Source code
-              </a>
             </div>
           </div>
-          <div class="project-wrapper__image load-hidden rounded">
-            <div class="scroll-container">
-              <img src="./assets/Images/Project 2/P2a.png" alt="" />
-              <img src="./assets/Images/Project 2/P2b.png" alt="" />
+          <!-- Project-3 ended -->
 
-              <img src="./assets/Images/Project 2/P2c.png" alt="" />
-              <img src="./assets/Images/Project 2/P2d.png" alt="" />
+          <!-- Project-4 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="card card-component shadow-md rounded-100 overflow-hidden mx-auto h-100 project-card p-3"
+              data-description="<p>InstaVerse-App is a MERN (MongoDB, Express.js, React.js, Node.js) stack application that allows users to share stories with others. Users can register/login to the platform, create stories by filling out a form with captions, tags, and images, and interact with other users' stories by liking, editing, and deleting them.</p><p><strong>Frameworks/libraries/Packages :</strong> React js , Redux, antd , axios, moment, bcryptjs, body-parser, cors, dotenv, mongodb, express, nodejs, jsonwebtoken, mongoose, nodemon
+                </p><p><strong>Deployment:</strong>render</p>">
+              <img class="card-img-top" style="height: 280px;" src="./assets/Images/Project 12/p12.png"
+                alt="Image of Working project">
+              <div class="card-body mt-2">
+                <h3 class="card-title font-weight-bold "><strong>InstaVerse</strong></h3>
+                <hr>
+                <div class="d-flex flex-wrap justify-content-between">
+                  <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume"
+                    href="https://instaverse-app.onrender.com/">
+                    See Live
+                  </a>
 
-              <img src="./assets/Images/Project 2/P2e.png" alt="" />
-              <img src="./assets/Images/Project 2/P2f.png" alt="" />
-
-              <img src="./assets/Images/Project 2/P2g.png" alt="" />
-              <img src="./assets/Images/Project 2/P2h.png" alt="" />
-
-              <img src="./assets/Images/Project 2/P2i.png" alt="" />
-              <img src="./assets/Images/Project 2/P2j.png" alt="" />
-
-              <img src="./assets/Images/Project 2/P2k.png" alt="" />
-              <img src="./assets/Images/Project 2/P2n.png" alt="" />
-
-              <img src="./assets/Images/Project 2/P2l.png" alt="" />
-              <img src="./assets/Images/Project 2/P2m.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <!-- /END Project -->
-
-        <!-- Notice: each .row is a project -->
-
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="project-wrapper__text load-hidden">
-              <h3 class="project-wrapper__text-title">Picture In Picture</h3>
-              <div>
-                <p class="mb-4">
-                  HTML,CSS and Javascript based website that allows you to watch a video stream in a small window on top
-                  of another screen.You can also adjust the size and position of the PiP window to your reference.
-                </p>
+                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+                    href="https://github.com/trushashah14/InstaVerse_App">
+                    Source Code
+                  </a>
+                  <a rel="noreferrer" class="cta-btn cta-btn--resume know-more-btn">
+                    Know more
+                  </a>
+                </div>
               </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
-                href="https://trushashah14.github.io/Picture-In-Picture/">
-                See Live
-              </a>
-              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                href=" https://github.com/trushashah14/Picture-In-Picture">
-                Source code
-              </a>
             </div>
           </div>
-          <div class="project-wrapper__image load-hidden rounded ">
-            <div class="scroll-container">
-              <img src="./assets/Images/Project 6/P6a.png" alt="" />
-              <img src="./assets/Images/Project 6/P6b.png" alt="" />
-              <img src="./assets/Images/Project 6/P6c.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <!-- /END Project -->
+          <!-- Project-4 ended -->
 
-        <!-- Notice: each .row is a project -->
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="project-wrapper__text load-hidden">
-              <h3 class="project-wrapper__text-title">Custom Countdown</h3>
-              <div>
-                <p class="mb-4">
-                  A custom Countdown with a video background where you can create a countdown that even gets stored
-                  locally to avoid resetting on refresh.
-                <p> <i>(Date/Time format : UTC)</i> </p>
-                </p>
+          <!-- Project-5 -->
+          <!-- <div class="col-12 col-md-6 col-lg-4 mb-5 ">
+            <div class="card card-component shadow-md rounded-100 overflow-hidden mx-auto h-100 project-card p-3"
+              data-description="<p>This project is a web application built with ReactJS, Express.js, MongoDB, and Node.js that facilitates blood donation management between donors, organizations (blood banks), and hospitals.
+
+                </p><p><strong>User Roles and Functionality:</strong></p>
+                  
+                 <p> <strong>Donors:</strong></p>
+                 <p> - Register and create a profile.</p>
+                 <p>- View their recent 5 donations.</p>
+                 <p> - Access a detailed donation history, including organizations they've donated to.</p>
+                 <p> - Donate blood to various organizations.</p>
+                 <p><strong>Organizations:</strong></p>
+                 <p>- Register and create a profile.</p>
+                 <p>- Manage blood inventory (total blood in, blood taken out, and available blood for each blood group).</p>
+                 <p>- View recent blood inflows and outflows.</p>
+                 <p> - Track donor records (including donation history and details).</p>
+                 <p>- Receive blood donations from donors and provide blood to hospitals.</p>
+                  
+                 <p><strong> Hospitals:</strong></p>
+                 <p>- Register and create a profile.</p>
+                 <p>- Request blood from organizations based on blood group requirements.</p>
+                 <p>- View recent blood consumption/requests.</p>
+                 <p>- Track blood obtained from organizations (including details and history).</p></p><p><strong>Frameworks/libraries/Packages :</strong>React js , Redux, antd , axios, moment, bcryptjs, dotenv, mongodb, express, nodejs, jsonwebtoken, mongoose, nodemon</p><p><strong>Deployment: </strong>render</p>">
+              <img class="card-img-top" style="height: 280px;" src="./assets/Images/Project 2/P2a.png"
+                alt="Image of Working project">
+              <div class="card-body mt-2">
+                <h3 class="card-title font-weight-bold "><strong>BloodBank Website</strong></h3>
+                <hr>
+                <div class="d-flex flex-wrap justify-content-between">
+                  <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="">
+                    See Live
+                  </a>
+
+                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+                    href="https://github.com/trushashah14/TS-BLOODBANK">
+                    Source Code
+                  </a>
+                  <a rel="noreferrer" class="cta-btn cta-btn--resume know-more-btn">
+                    Know more
+                  </a>
+                </div>
               </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
-                href="https://trushashah14.github.io/Custom-Countdown/">
-                See Live
-              </a>
-              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                href=" https://github.com/trushashah14/Custom-Countdown/">
-                Source code
-              </a>
             </div>
           </div>
-          <div class="project-wrapper__image load-hidden  rounded ">
-            <div class="scroll-container">
-              <img src="./assets/Images/Project 9/P9a.jpeg" alt="" />
-              <img src="./assets/Images/Project 9/P9b.jpeg" alt="" />
-              <img src="./assets/Images/Project 9/P9c.jpeg" alt="" />
-              <img src="./assets/Images/Project 9/P9d.jpeg" alt="" />
-            </div>
-          </div>
-        </div>
-        <!-- /END Project -->
+          Project-5 ended -->
 
-        <!-- Notice: each .row is a project -->
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="project-wrapper__text load-hidden">
-              <h3 class="project-wrapper__text-title">Infinite Scroller</h3>
-              <div>
-                <p class="mb-4">
-                  HTML,CSS and Javascript based website that gives you a feeling of infinite scrolling.
-                </p>
+          <h2 class="section-title dark-blue-text mt-4">Minor Projects</h2>
+
+          <!-- Project-6 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4 ">
+            <div class="card card-component shadow-md rounded-100 overflow-hidden mx-auto h-100 project-card p-3"
+              data-description="<p>HTML,CSS and Javascript based website that allows you to watch a video stream in a small window on top
+                of another screen.You can also adjust the size and position of the PiP window to your reference.</p><p><strong>Frameworks/libraries/Packages :</strong>HTML, CSS , Javascript</p><p><strong>Deployment: </strong>Github pages</p>">
+              <img class="card-img-top" style="height: 280px;" src=".\assets\Images\Project 6\P6c.png"
+                alt="Image of Working project">
+              <div class="card-body mt-2">
+                <h3 class="card-title font-weight-bold "><strong>Picture In Picture</strong></h3>
+                <hr>
+                <div class="d-flex flex-wrap justify-content-between">
+                  <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume"
+                    href="https://trushashah14.github.io/Picture-In-Picture/">
+                    See Live
+                  </a>
+
+                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+                    href="https://github.com/trushashah14/Picture-In-Picture">
+                    Source Code
+                  </a>
+                  <a rel="noreferrer" class="cta-btn cta-btn--resume know-more-btn">
+                    Know more
+                  </a>
+                </div>
               </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
-                href="https://trushashah14.github.io/Infinite-Scroll/">
-                See Live
-              </a>
-              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                href="https://github.com/trushashah14/Infinite-Scroll">
-                Source Code
-              </a>
             </div>
           </div>
-          <div class="project-wrapper__image load-hidden rounded ">
-            <div class="display-area">
-              <img src="./assets/Images/Project 5/P5.jpeg" alt="" />
-            </div>
-          </div>
-        </div>
-        <!-- /END Project -->
-        <br />
-        <br />
-        <!-- Notice: each .row is a project -->
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="project-wrapper__text load-hidden">
-              <h3 class="project-wrapper__text-title">Animated Navigation</h3>
-              <div>
-                <p class="mb-4">
-                  All about using nav and making an animated navigation for websites.
-                </p>
+          <!-- Project-6 ended -->
+
+          <!-- Project-7 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4 ">
+            <div
+              class="card card-component shadow-md rounded-100 overflow-hidden mx-auto h-100 project-card p-3 "
+              data-description="<p>A custom Countdown with a video background where you can create a countdown that even gets stored
+                locally to avoid resetting on refresh.
+              <p> <i>(Date/Time format : UTC)</i> </p></p><p><strong>Frameworks/libraries/Packages :</strong>HTML, CSS , Javascript</p><p><strong>Deployment: </strong>Github pages</p>">
+              <img class="card-img-top" style="height: 280px;" src=".\assets\Images\Project 9\P9a.jpeg"
+                alt="Image of Working project">
+              <div class="card-body mt-2">
+                <h3 class="card-title font-weight-bold "><strong>Custom Countdown</strong></h3>
+                <hr>
+                <div class="d-flex flex-wrap justify-content-between">
+                  <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume"
+                    href="https://trushashah14.github.io/Custom-Countdown/">
+                    See Live
+                  </a>
+
+                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+                    href="https://github.com/trushashah14/Custom-Countdown/">
+                    Source Code
+                  </a>
+                  <a rel="noreferrer" class="cta-btn cta-btn--resume know-more-btn">
+                    Know more
+                  </a>
+                </div>
               </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
-                href="https://trushashah14.github.io/Animated-Navigation/">
-                See Live
-              </a>
-              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                href=" https://github.com/trushashah14/Animated-Navigation">
-                Source code
-              </a>
             </div>
           </div>
-          <div class="project-wrapper__image load-hidden rounded">
-            <div class=" display-area">
-              <img src="./assets/Images/Project 7/P7a.jpeg" alt="" />
-            </div>
-          </div>
-        </div>
-        <!-- /END Project -->
+          <!-- Project-7 ended -->
 
-        <br />
-        <br />
-        <!-- Notice: each .row is a project -->
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="project-wrapper__text load-hidden">
-              <h3 class="project-wrapper__text-title">RoboFriends</h3>
-              <div>
-                <p class="mb-4">
-                  Small react based interactive website using javascript,CSS and HTML
-                </p>
+          <!-- Project-8 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4 ">
+            <div class="card card-component shadow-md rounded-100 overflow-hidden mx-auto h-100 project-card p-3"
+              data-description="<p> HTML,CSS and Javascript based website that gives you a feeling of infinite scrolling.</p><p><strong>Frameworks/libraries/Packages :</strong>HTML, CSS , Javascript</p><p><strong>Deployment: </strong>Github pages</p>">
+              <img class="card-img-top" style="height: 280px;" src=".\assets\Images\Project 5\P5.png"
+                alt="Image of Working project">
+              <div class="card-body mt-2">
+                <h3 class="card-title font-weight-bold "><strong>Infinite Scroller</strong></h3>
+                <hr>
+                <div class="d-flex flex-wrap justify-content-between">
+                  <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume"
+                    href="https://trushashah14.github.io/Infinite-Scroll/">
+                    See Live
+                  </a>
+
+                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+                    href="https://github.com/trushashah14/Infinite-Scroll">
+                    Source Code
+                  </a>
+                  <a rel="noreferrer" class="cta-btn cta-btn--resume know-more-btn">
+                    Know more
+                  </a>
+                </div>
               </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
-                href="https://trushashah14.github.io/RoboFriends/">
-                See Live
-              </a>
-              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                href="https://github.com/trushashah14/RoboFriends">
-                Source Code
-              </a>
             </div>
           </div>
-          <div class="project-wrapper__image load-hidden rounded ">
-            <div class="display-area">
-              <img src="./assets/Images/Project 3/P3.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <!-- /END Project -->
+          <!-- Project-8 ended -->
+          <!-- Project-9 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4 ">
+            <div class="card card-component shadow-md rounded-100 overflow-hidden mx-auto h-100 project-card p-3"
+              data-description="<p>All about using nav and making an animated navigation for websites.</p><p><strong>Frameworks/libraries/Packages :</strong>HTML, CSS , Javascript</p><p><strong>Deployment: </strong>Github pages</p>">
+              <img class="card-img-top" style="height: 280px;" src="./assets/Images/Project 7/P7a.jpeg"
+                alt="Image of Working project">
+              <div class="card-body mt-2">
+                <h3 class="card-title font-weight-bold "><strong>Animated Navigation</strong></h3>
+                <hr>
+                <div class="d-flex flex-wrap justify-content-between">
+                  <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume"
+                    href="https://trushashah14.github.io/Animated-Navigation/">
+                    See Live
+                  </a>
 
-        <!-- Notice: each .row is a project -->
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="project-wrapper__text load-hidden">
-              <h3 class="project-wrapper__text-title">Quotes-Generator</h3>
-              <div>
-                <p class="mb-4">
-                  HTML,CSS and Javascript based website that generates unique quotes on a click of a button and allows
-                  you to share it on Twitter.
-                </p>
+                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+                    href="https://github.com/trushashah14/Animated-Navigation">
+                    Source Code
+                  </a>
+                  <a rel="noreferrer" class="cta-btn cta-btn--resume know-more-btn">
+                    Know more
+                  </a>
+                </div>
               </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
-                href="https://trushashah14.github.io/Quotes-Generator/">
-                See Live
-              </a>
-              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                href="https://github.com/trushashah14/Quotes-Generator">
-                Source Code
-              </a>
             </div>
           </div>
-          <div class="project-wrapper__image load-hidden rounded ">
-            <div class="display-area">
-              <img src="./assets/Images/Project 4/P4.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <!-- /END Project -->
+          <!-- Project-9 ended -->
 
+          <!-- Project-10 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4 ">
+            <div class="card card-component shadow-md rounded-100 overflow-hidden mx-auto h-100 project-card p-3"
+              data-description="<p>HTML,CSS and Javascript based website that generates unique quotes on a click of a button and allows
+      you to share it on Twitter.</p><p><strong>Frameworks/libraries/Packages :</strong>HTML , CSS , Javascript </p><p><strong>Deployment: </strong>Github pages</p>">
+              <img class="card-img-top" style="height: 280px;" src="./assets/Images/Project 4/P4.png"
+                alt="Image of Working project">
+              <div class="card-body mt-2">
+                <h3 class="card-title font-weight-bold "><strong>Random Quotes-Generator</strong></h3>
+                <hr>
+                <div class="d-flex flex-wrap justify-content-between">
+                  <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume"
+                    href="https://trushashah14.github.io/Quotes-Generator/">
+                    See Live
+                  </a>
 
-
-
-        <!-- Notice: each .row is a project -->
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="project-wrapper__text load-hidden">
-              <h3 class="project-wrapper__text-title">Music Player</h3>
-              <div>
-                <p class="mb-4">
-                  A music player where you can control the music as per your need. Also one can change the background
-                  gradient dynamically.
-                </p>
+                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+                    href="https://github.com/trushashah14/Quotes-Generator">
+                    Source Code
+                  </a>
+                  <a rel="noreferrer" class="cta-btn cta-btn--resume know-more-btn">
+                    Know more
+                  </a>
+                </div>
               </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
-                href="https://trushashah14.github.io/Music-Player/">
-                See Live
-              </a>
-              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                href=" https://github.com/trushashah14/Music-Player">
-                Source code
-              </a>
             </div>
           </div>
-          <div class="project-wrapper__image load-hidden rounded">
-            <div class=" display-area">
-              <img src="./assets/Images/Project 8/P8a.jpeg" alt="" />
-            </div>
-          </div>
-        </div>
-        <!-- /END Project -->
+          <!-- Project-10 ended -->
 
+          <!-- Project-11 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4 ">
+            <div class="card  card-component shadow-md rounded-100 overflow-hidden mx-auto h-100 project-card p-3"
+              data-description="<p>A music player where you can control the music as per your need. Also one can change the background
+      gradient dynamically.</p><p><strong>Frameworks/libraries/Packages :</strong>HTML , CSS , Javascript </p><p><strong>Deployment: </strong>Github pages</p>">
+              <img class="card-img-top" style="height: 280px;" src="./assets/Images/Project 8/P8a.jpeg"
+                alt="Image of Working project">
+              <div class="card-body mt-2">
+                <h3 class="card-title font-weight-bold "><strong>Music Player</strong></h3>
+                <hr>
+                <div class="d-flex flex-wrap justify-content-between">
+                  <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume"
+                    href="https://trushashah14.github.io/Music-Player/">
+                    See Live
+                  </a>
 
-
-        <!-- Notice: each .row is a project -->
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="project-wrapper__text load-hidden">
-              <h3 class="project-wrapper__text-title">Video Player</h3>
-              <div>
-                <p class="mb-4">
-                  A Custom video player where one can adjust the speed , volume and position of the video.You can also
-                  pause/play by clicking anywhere on the video.
-                </p>
+                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+                    href="https://github.com/trushashah14/Music-Player">
+                    Source Code
+                  </a>
+                  <a rel="noreferrer" class="cta-btn cta-btn--resume know-more-btn">
+                    Know more
+                  </a>
+                </div>
               </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
-                href="https://trushashah14.github.io/Video-Player/">
-                See Live
-              </a>
-              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                href=" https://github.com/trushashah14/Video-Player">
-                Source code
-              </a>
             </div>
           </div>
-          <div class="project-wrapper__image load-hidden  rounded">
-            <div class=" display-area">
-              <img src="./assets/Images/Project 10/P10a.jpeg" alt="" />
+          <!-- Project-11 ended -->
+          <!-- Project-12 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4 ">
+            <div class="card card-component shadow-md rounded-100 overflow-hidden mx-auto h-100 project-card p-3"
+              data-description="<p>A Custom video player where one can adjust the speed , volume and position of the video.You can also
+                pause/play by clicking anywhere on the video.</p><p><strong>Frameworks/libraries/Packages :</strong>HTML , CSS , Javascript </p><p><strong>Deployment: </strong>Github pages</p>">
+              <img class="card-img-top" style="height: 280px;" src="./assets/Images/Project 10/P10a.jpeg"
+                alt="Image of Working project">
+              <div class="card-body mt-2">
+                <h3 class="card-title font-weight-bold "><strong>Video Player</strong></h3>
+                <hr>
+                <div class="d-flex flex-wrap justify-content-between">
+                  <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume"
+                    href="https://trushashah14.github.io/Video-Player/">
+                    See Live
+                  </a>
+
+                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+                    href="https://github.com/trushashah14/Video-Player">
+                    Source Code
+                  </a>
+                  <a rel="noreferrer" class="cta-btn cta-btn--resume know-more-btn">
+                    Know more
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
+          <!-- Project-12 ended -->
+          <!-- Project-13 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4 ">
+            <div class="card card-component shadow-md rounded-100 overflow-hidden mx-auto h-100 project-card p-3"
+              data-description="<p>Small react based interactive website where one can serach robos from the list using their names.</p><p><strong>Frameworks/libraries/Packages :</strong>Reactjs, tachyons, gh-pages, HTML , CSS , Javascript </p><p><strong>Deployment: </strong>Github pages</p>">
+              <img class="card-img-top" style="height: 280px;" src="./assets/Images/Project 3/P3.png"
+                alt="Image of Working project">
+              <div class="card-body mt-2">
+                <h3 class="card-title font-weight-bold "><strong>Robofriends</strong></h3>
+                <hr>
+                <div class="d-flex flex-wrap justify-content-between">
+                  <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume"
+                    href="https://trushashah14.github.io/RoboFriends/">
+                    See Live
+                  </a>
+
+                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+                    href="https://github.com/trushashah14/RoboFriends">
+                    Source Code
+                  </a>
+                  <a rel="noreferrer" class="cta-btn cta-btn--resume know-more-btn">
+                    Know more
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project-13 ended -->
+
         </div>
-        <!-- /END Project -->
       </div>
     </div>
+
   </section>
-  <!-- /END Projects Section -->
+  <!-- Popup Modal -->
+  <div id="projectModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="modal-title mb-3"></h2>
+      <p class="modal-description mb-4"></p>
+    </div>
+  </div>
+
+
 
   <!-- **** Contact Section **** -->
   <section id="contact">
@@ -468,7 +518,10 @@
           to Action</a>
       </div>
     </div>
+
   </section>
+
+
   <!-- /END Contact Section -->
 
   <!-- **** Footer Section **** -->
@@ -498,7 +551,11 @@
   </footer>
   <!-- /END Footer Section -->
 
-  <script defer type="module" src="index.js"></script>
+  <script defer type="module" src="index.js">
+
+
+
+  </script>
 </body>
 
 </html>

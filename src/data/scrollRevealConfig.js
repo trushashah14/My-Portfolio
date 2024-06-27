@@ -1,9 +1,10 @@
 export const defaultProps = {
   easing: "cubic-bezier(0.5, 0, 0, 1)",
-  distance: "30px",
+  distance: "50px",
   duration: 400,
   desktop: true,
   mobile: true,
+  reset: false,
 };
 
 export const targetElements = [
@@ -61,6 +62,17 @@ export const targetElements = [
     element: ".contact-wrapper",
     animation: {
       delay: 400,
+      origin: "bottom",
+    },
+  },
+
+  {
+    element: ".card-component",
+    animation: {
+      delay: 200,             // Shorter delay for quicker response
+      duration: 800,          // Longer duration for smoother transition
+      distance: "40px",       // Adjusted distance for a balanced effect
+      easing: "ease-in-out",  // Smooth easing function
       origin: "bottom",
     },
   },
