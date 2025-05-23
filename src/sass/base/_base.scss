@@ -1,31 +1,29 @@
 :root {
-  --primary-color:#{ $primary-color};
-  --secondary-color:#{$secondary-color};
-  --white-color:#{$white-color};
-  --button-color:#{$black-color};
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --white-color: #{$white-color};
+  --button-color: #{$black-color};
   --dark-grey: #{$dark-grey};
-  --light-grey:#{$light-grey};
+  --light-grey: #{$light-grey};
   --dark-blue-text: #{$dark-blue-text}; // For Headings
- --fallback-color:#{$fallback-color-light};
- --name-text:#{ $secondary-color};
- --major-fill:#{ $secondary-color};
- --arrow-text:#{ $secondary-color};
+  --fallback-color: #{$fallback-color-light};
+  --name-text: #{$secondary-color};
+  --major-fill: #{$secondary-color};
+  --arrow-text: #{$secondary-color};
 }
 
 [data-theme="dark"] {
   --primary-color: #{$black-color};
-  --secondary-color:#{$secondary-color};
-  --white-color:#{$black-color};
-  --button-color:#{$white-color};
-  --dark-grey: #{$black-color};
+  --secondary-color: #{$secondary-color};
+  --white-color: #{$black-color};
+  --button-color: #{$white-color};
+  --dark-grey: #{$dark-grey};
   --light-grey: #{$light-grey};
   --dark-blue-text: #{$arrow-text};
- --fallback-color:#{$fallback-color-dark};
- --name-text:#{$white-color};
- --major-fill:#{$major-fill};
- --arrow-text:#{$arrow-text};
-
-
+  --fallback-color: #{$fallback-color-dark};
+  --name-text: #{$white-color};
+  --major-fill: #{$major-fill};
+  --arrow-text: #{$arrow-text};
 }
 
 html {
@@ -41,7 +39,6 @@ body {
   text-align: center;
   background-color: var(--white-color);
   scroll-behavior: smooth;
-
 }
 ::-webkit-scrollbar {
   width: 5px; /* Width of the scrollbar */

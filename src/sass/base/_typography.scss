@@ -57,7 +57,7 @@ nav {
   position: relative;
   top: -4px;
   right: 5px;
-  color: var(--secondary-color);
+  color: var(--arrow-text);
 }
 
 .theme-switch {
@@ -94,7 +94,7 @@ nav {
 }
 
 input:checked+.slider {
-  background: var(--secondary-color);
+  background: var(--arrow-text);
 }
 
 input:checked+.slider::before {
@@ -113,7 +113,7 @@ input:checked+.slider::before {
   font-size: 30px;
   margin-right: 5px;
 
-  color: var(--secondary-color);
+  color: var(--arrow-text);
 
 }
 
@@ -239,19 +239,54 @@ div.display-area img {
 
 
 .section-title {
-  margin: 0px;
-  margin-bottom: 4.5rem;
-  font-size: $big-font-size;
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 0.1em;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  text-shadow: 1px 1px 2px var(--arrow-text);
+
+
 
   @include respond(phone) {
     font-size: 2.8rem;
   }
 }
 
+.section-title:hover {
+  transform: scale(1.05); /* Slight scale on hover */
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* Underline Animation */
+.underline-animation {
+  height: 4px;
+  width: 60%;
+  margin: 0 auto;
+  background: linear-gradient(90deg, var(--secondary-color),var(--arrow-text));
+  position: relative;
+  // top: -20px;
+  animation: underline-animation 3s infinite;
+}
+
+@keyframes underline-animation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+
+
 .dark-blue-text {
-  color: var(--dark-blue-text) !important;
+  color: var(--button-color) !important;
 }
 
 .text-color-main {
